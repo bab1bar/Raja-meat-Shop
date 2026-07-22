@@ -1,0 +1,340 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f8f8f8;
+    color:#222;
+    padding-bottom:100px;
+
+}
+
+
+
+header{
+
+    background:#d62828;
+    color:white;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+
+
+.top{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+
+}
+
+
+.top h1{
+
+    font-size:20px;
+
+}
+
+
+
+button{
+
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+
+
+
+#languageBtn,
+#darkBtn{
+
+    background:white;
+    color:#d62828;
+
+}
+
+
+
+.shop-info{
+
+    margin-top:10px;
+    font-size:14px;
+
+}
+
+
+
+
+
+.controls{
+
+    display:flex;
+    gap:10px;
+    padding:15px;
+
+}
+
+
+
+.controls input,
+.controls select{
+
+    flex:1;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ccc;
+
+}
+
+
+
+
+
+.products{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    padding:15px;
+
+}
+
+
+
+
+.card{
+
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+.card img{
+
+    width:100%;
+    height:140px;
+    object-fit:cover;
+
+}
+
+
+
+.card-content{
+
+    padding:12px;
+
+}
+
+
+
+.card h2{
+
+    font-size:18px;
+    margin-bottom:5px;
+
+}
+
+
+
+.urdu{
+
+    color:#777;
+    font-size:14px;
+
+}
+
+
+
+.price{
+
+    color:#d62828;
+    font-weight:bold;
+    margin:10px 0;
+
+}
+
+
+
+
+.card select{
+
+    width:100%;
+    padding:8px;
+    border-radius:8px;
+
+}
+
+
+
+.add-btn{
+
+    width:100%;
+    margin-top:10px;
+    background:#d62828;
+    color:white;
+
+}
+
+
+
+
+.cart-box{
+
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+
+    background:white;
+
+    padding:15px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    box-shadow:0 -5px 15px rgba(0,0,0,.2);
+
+    z-index:2000;
+
+}
+
+
+
+
+#orderBtn{
+
+    background:#25D366;
+    color:white;
+
+}
+
+
+
+
+
+footer{
+
+    text-align:center;
+    padding:20px;
+    color:#777;
+
+}
+
+
+
+
+
+
+/* Dark Mode */
+
+
+.dark{
+
+    background:#111;
+    color:white;
+
+}
+
+
+
+.dark .card,
+.dark .cart-box,
+.dark footer{
+
+    background:#222;
+    color:white;
+
+}
+
+
+
+.dark input,
+.dark select{
+
+    background:#333;
+    color:white;
+
+}
+
+
+
+
+
+
+/* Urdu direction */
+
+
+.urdu-mode{
+
+    direction:rtl;
+    text-align:right;
+
+}
+
+
+
+
+
+/* Desktop */
+
+
+@media(min-width:700px){
+
+
+.products{
+
+grid-template-columns:repeat(4,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:400px){
+
+
+.products{
+
+grid-template-columns:1fr;
+
+}
+
+
+.top h1{
+
+font-size:16px;
+
+}
+
+
+}
