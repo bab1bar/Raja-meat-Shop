@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fresh Chicken Shop</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d62828">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/icons/icon-192.png">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="top">
+
+        <h1>
+            🐔 
+            <span data-en="Fresh Chicken Shop"
+                  data-ur="تازہ چکن شاپ">
+                  Fresh Chicken Shop
+            </span>
+        </h1>
+
+
+        <button id="languageBtn">
+            اردو
+        </button>
+
+        <button id="darkBtn">
+            🌙
+        </button>
+
+    </div>
+
+
+    <div class="shop-info">
+
+        <p>
+            <span data-en="Fresh & Hygienic Chicken"
+                  data-ur="تازہ اور صاف ستھرا چکن">
+                  Fresh & Hygienic Chicken
+            </span>
+        </p>
+
+        <p>
+            📞 0300-0000000
+        </p>
+
+    </div>
+
+
+</header>
+
+
+
+<section class="controls">
+
+
+<input 
+type="search"
+id="search"
+placeholder="Search chicken products...">
+
+
+
+<select id="category">
+
+<option value="all">
+All Products
+</option>
+
+<option value="chicken">
+Chicken
+</option>
+
+<option value="pieces">
+Pieces
+</option>
+
+<option value="special">
+Special Cuts
+</option>
+
+</select>
+
+
+</section>
+
+
+
+
+<section id="products" class="products">
+
+
+<!-- Products come from JavaScript -->
+
+
+</section>
+
+
+
+
+
+<div class="cart-box">
+
+
+<h3>
+🛒 Cart:
+<span id="cartCount">
+0
+</span>
+</h3>
+
+
+<h3>
+Total:
+Rs <span id="total">
+0
+</span>
+</h3>
+
+
+<button id="orderBtn">
+
+Order on WhatsApp
+
+</button>
+
+
+</div>
+
+
+
+
+
+<footer>
+
+
+<p>
+© 2026 Fresh Chicken Shop
+</p>
+
+
+<p>
+Home Delivery Available
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="app.js"></script>
+
+
+<script>
+
+
+// Register Service Worker
+
+if("serviceWorker" in navigator){
+
+navigator.serviceWorker.register("sw.js")
+.then(()=>{
+console.log("Service Worker Registered");
+});
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
