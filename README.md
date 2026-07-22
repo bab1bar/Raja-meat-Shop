@@ -62,3 +62,22 @@ Backend (Planned, coming soon):
 
 
 ## 📂 Project Structure
+chicken-shop-pwa/
+
+├── index.html
+├── style.css
+├── script.js
+├── manifest.json
+├── sw.js
+│
+├── assets/
+│   ├── images/
+│   └── icons/
+│
+├── pages/
+│
+├── data/
+│   └── products.json
+│
+├── README.md
+└── .gitignore 
