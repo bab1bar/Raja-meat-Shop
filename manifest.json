@@ -1,31 +1,17 @@
 {
-    "name": "Fresh Chicken Shop",
-    "short_name": "Chicken Shop",
-
-    "description": "Fresh chicken ordering PWA",
-
+    "name": "Fresh Meat Shop",
+    "short_name": "Meat Shop",
+    "description": "Fresh chicken, beef and mutton delivery app",
     "start_url": "index.html",
-
     "display": "standalone",
-
     "background_color": "#ffffff",
-
-    "theme_color": "#d62828",
-
+    "theme_color": "#8B0000",
 
     "icons": [
-
         {
-            "src": "assets/icons/icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-
-        {
-            "src": "assets/icons/icon-512.png",
+            "src": "images/logo.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type":desi front chicken"/png"
         }
-
     ]
 }
