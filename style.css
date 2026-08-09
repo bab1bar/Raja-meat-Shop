@@ -216,16 +216,40 @@ button:hover {
 
 .product-container {
     display: grid;
-    grid-template-columns: repeat(3, 280px);
-    justify-content: center;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
-    background-color: #eb8181;
+    width: 100%;
 }
+/* GRID RESPONSIVENESS */
+
+@media (max-width: 1024px) {
+
+    .product-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
+
+@media (max-width: 768px) {
+
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+
+@media (max-width: 400px) {
+
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
 
 
 .product-card {
 
-    width: 280px;
+    width:100%;
 
     padding: 20px;
 
@@ -404,7 +428,7 @@ footer {
 
 }
 
- 
+ /*
 /* Mobile Responsive Design */
 
 @media (max-width: 768px) {
@@ -535,8 +559,35 @@ img {
 
         width: 100%;
 
+    }*/
+
+/*NEW MEDIA QUERY FOR RESPONSIVENESS BELOW ADDED*/
+    /* Tablet */
+@media (max-width: 1024px) {
+
+    .product-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
+}
 
+
+/* Phone */
+@media (max-width: 768px) {
+
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
 }
+
+
+/* Small phone - still 2 columns */
+@media (max-width: 400px) {
+
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
