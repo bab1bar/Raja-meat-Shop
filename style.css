@@ -228,7 +228,7 @@ button:hover {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-
+    }
 
 @media (max-width: 768px) {
 
@@ -236,7 +236,7 @@ button:hover {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-
+}
 
 @media (max-width: 400px) {
 
@@ -244,7 +244,7 @@ button:hover {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-
+}
 
 
 .product-card {
@@ -545,7 +545,7 @@ img {
 
     }
 
-
+}
 
     .logo h1 {
 
@@ -559,8 +559,7 @@ img {
 
         width: 100%;
 
-    }*/
-
+    }
 /*NEW MEDIA QUERY FOR RESPONSIVENESS BELOW ADDED*/
     /* Tablet */
 @media (max-width: 1024px) {
